@@ -31,15 +31,15 @@ var rotate = function(nums, k) {
 //     return nums;
     
 //     3번째 트라이... - Wrong Answer
-//     if( k >= nums.length){
-//         k = k % nums.length;
-//     }
-//     let length = nums.length;
-//     let a = nums.slice(-k);
-//     nums.unshift(a);
-//     nums = nums.flat();
-//     nums.length = length;
-//     return nums;
+    // if( k >= nums.length){
+    //     k = k % nums.length;
+    // }
+    // let length = nums.length;
+    // let a = nums.slice(-k);
+    // nums.unshift(a);
+    // nums = nums.flat();
+    // nums.length = length;
+    // return nums;
     
     // 4번째 트라이 - time Limit Exceeded
 //         if (k>=nums.length){
@@ -70,12 +70,17 @@ var rotate = function(nums, k) {
         
 //     }
      // 7번째 트라이 - 3트 변형 - Wrong Answer
+    // if( k >= nums.length){
+    //     k = k % nums.length;
+    // }
+    // let length = nums.length;
+    // let a = nums.slice(-k);
+    // nums.unshift(...a);
+    // nums.length = length;
     if( k >= nums.length){
-        k = k % nums.length;
+         k = k % nums.length;
     }
-    let length = nums.length;
-    let a = nums.slice(-k);
+    let a = nums.splice(-k);
     nums.unshift(...a);
-    nums.length = length;
 
 };
