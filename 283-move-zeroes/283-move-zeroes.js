@@ -3,26 +3,20 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var moveZeroes = function(nums) {
-    
-
-    let count = 0;
-    for(let i=0; i<nums.length; i++){
-        if(nums[i] === 0){
-            count++; // 요소가 0인 모든 값 찾기
-        }
-    }
-    let check = [];
-    check.length = count;
-    check.fill(0);
+     let count = 0;
     if(count !== nums.length){
-    for(let i=0; i<nums.length; i++){
+     for(let i=0; i<nums.length; i++){
         if(nums[i] === 0){
-           nums.splice(i,1)
+           nums.splice(i,1);
+            count++;
            i--;
-           }
         }
-       nums.push(...check)
      }
+    for(let i=0; i<count; i++){
+    nums.push(0)
+    }
+}
+}
 //     for(let i=0; i<nums.length; i++){
         
 //         if(nums[i] === 0){ // 요소가 0이면
@@ -39,7 +33,7 @@ var moveZeroes = function(nums) {
 //          break;
 //         }
     // }
-    }
+
     
  
 
