@@ -14,20 +14,15 @@ var moveZeroes = function(nums) {
     let check = [];
     check.length = count;
     check.fill(0);
-
-    
-    
-    function point(){
-        if(count !== nums.length){
-        for(let i=0; i<nums.length; i++){
-            if(nums[i] === 0){
-                nums.splice(i,1)
-                i--;
-            }
+    if(count !== nums.length){
+    for(let i=0; i<nums.length; i++){
+        if(nums[i] === 0){
+           nums.splice(i,1)
+           i--;
+           }
         }
-        nums.push(...check)
-        console.log(nums)
-            }
+       nums.push(...check)
+     }
 //     for(let i=0; i<nums.length; i++){
         
 //         if(nums[i] === 0){ // 요소가 0이면
@@ -46,9 +41,6 @@ var moveZeroes = function(nums) {
     // }
     }
     
-   
-
-    point();
  
 
     // console.log(nums.slice(-check.length).flat())
@@ -85,7 +77,3 @@ var moveZeroes = function(nums) {
     //         nums[j+1] = 0;        
     //     }
     // }
-};
-// i=0 a= 1, 1,0,3,12,0
-// i=1 a= 3, 1,3,12,0,0
-// i=2 a=
