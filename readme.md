@@ -47,8 +47,8 @@ Graph Theory 14일 (14일)
 ## ※ 문제 리스트 :
 
 제주 코딩 베이스캠프 http://www.paullab.co.kr/codefestival.html  
-js 100제(1~50) http://www.paullab.co.kr/codeFestival_js_1.pdf  
-js 100제(51~100) http://www.paullab.co.kr/codeFestival_js_2.pdf
+js 100제(1 ~ 50) http://www.paullab.co.kr/codeFestival_js_1.pdf  
+js 100제(51 ~ 100) http://www.paullab.co.kr/codeFestival_js_2.pdf
 
 ## ※ 코딩테스트 문제 사이트 :
 
