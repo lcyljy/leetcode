@@ -77,6 +77,7 @@ var rotate = function(nums, k) {
     // let a = nums.slice(-k);
     // nums.unshift(...a);
     // nums.length = length;
+    // 8번째 트라이 - 7트 변형
     if( k >= nums.length){
          k = k % nums.length;
     }
